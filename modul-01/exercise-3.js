@@ -44,3 +44,25 @@ const rupiah = (number) => {
 
 console.log(rupiah(1000));
 console.log(rupiah(200000));
+
+// No.5
+const originalString = 'Hello world';
+const searchString = 'ell';
+
+const newString = originalString.replace(searchString, '');
+
+console.log(newString);
+
+// No.6
+function capitalizeFirstLetter(str) {
+  if (!str) return '';
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+function capitalizeEachWord(sentence) {
+  return sentence
+    .split(' ')
+    .map((word) => capitalizeFirstLetter(word))
+    .join(' ');
+}
+
+console.log(capitalizeEachWord('hello world'));
