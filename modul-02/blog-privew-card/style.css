@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4d04e;
+  font-family: 'Figtree', sans-serif;
+}
+
+.card {
+  width: 327px;
+  height: 501px;
+  margin-top: 156px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 24px;
+  /* gap: 24px; */
+  border: 1px solid #111111;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.card-content {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 279px;
+  height: 173px;
+  gap: 12px;
+}
+
+.card-content h1 {
+  width: 73px;
+  height: 26px;
+  border-radius: 4px;
+  padding: 4px 12px 4px 12px;
+  gap: 8px;
+  background-color: #f4d04e;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}
+
+.card-content h2 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}
+
+.card-content h3 {
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}
+
+.card-content p {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #6b6b6b;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.author h3 {
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
