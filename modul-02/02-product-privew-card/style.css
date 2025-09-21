@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #f2eae2;
+}
+
+/* font-family: "Fraunces", serif; */
+/* font-family: "Montserrat", sans-serif; */
+
+#card {
+  width: 343px;
+  height: 611px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 28px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#card img {
+  width: 343.69px;
+  height: 240px;
+  left: 0.15px;
+}
+
+#detail {
+  width: 343px;
+  height: 371px;
+  background-color: white;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 24px;
+}
+
+#category {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 5px;
+  color: #6c7289;
+}
+
+#text-1 {
+  width: 295px;
+  height: 64px;
+  left: 24px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+#text-2 {
+  width: 295px;
+  height: 92px;
+  left: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  color: #6c7289;
+}
+
+#price {
+  display: flex;
+  align-items: center;
+  width: 194px;
+  height: 32px;
+  top: 487px;
+  left: 24.5px;
+  gap: 19px;
+}
+
+#price h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #3d8168;
+}
+
+#price h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-decoration: line-through;
+  color: #6c7289;
+}
+
+#cart {
+  width: 295px;
+  height: 48px;
+  background-color: #3d8168;
+  border: none;
+  left: 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 11.61px;
+  margin-top: 20px;
+}
+
+#cart img {
+  width: 14.39px;
+  height: 16px;
+}
+
+#cart p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
