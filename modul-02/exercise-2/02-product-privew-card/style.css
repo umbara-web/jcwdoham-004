@@ -127,3 +127,12 @@ body {
   letter-spacing: 0px;
   color: #ffffff;
 }
+
+/* img{
+  #card img {
+    width: 343px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+} */
