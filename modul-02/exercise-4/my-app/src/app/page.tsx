@@ -281,6 +281,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Filter untuk mobile */}
         <div className='flex gap-3 px-6 w-[327px] lg:w-[540px] h-12 items-center justify-center mb-4 lg:mb-[24px] lg:h-[64px] rounded-[5px] lg:py-[20px] lg:px-[24px] shadow-xl mt-4 bg-white dark:bg-[#25273D] text-[#9495A5] dark:text-[#5B5E7E] lg:hidden'>
           <span
             onClick={() => setFilter('All')}
