@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import DarkModeToggle from '@/components/ui/DarkModeToggle';
 
 export default function Header() {
   return (
-    <div className='sticky top-0 flex mx-auto py-6 items-center justify-between border-b-2 border-gray-300'>
+    <div className='sticky top-0 flex mx-auto max-w-6xl px-6 py-4 items-center justify-between border-b-2 border-gray-300'>
       <Link href={'/'} className='flex gap-2'>
         <Image src='/logo.svg' alt='logo' width={26} height={28} />
         <span className='text-xl font-bold'>Umbara</span>
@@ -33,7 +33,7 @@ export default function Header() {
       <div className='hidden lg:flex items-center gap-4'>
         <DarkModeToggle />
         <Link href={'/contact'}>
-          <Button className='w-full'>Contact Us</Button>
+          <Button className='w-full font-bold'>Contact Us</Button>
         </Link>
       </div>
       <div className='lg:hidden cursor-pointer hover:text-primary'>

@@ -126,7 +126,9 @@
 @theme {
   --font-quicksand: 'Quicksand', sans-serif;
   --color-primary: #ff623e;
+  --color-primary-100: #ffe0d8;
   --color-primary-300: #cc4e32;
+  --color-primary-400: #80311f;
 
   --color-light: #0a0d12;
   --color-dark: #fdfdfd;
