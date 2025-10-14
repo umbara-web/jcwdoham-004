@@ -1,6 +1,7 @@
 import React from 'react';
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
+import Image from 'next/image';
 
 export default function Trusted() {
   return (
@@ -14,77 +15,91 @@ export default function Trusted() {
             <div className='relative py-16 md:w-full'>
               <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
                 <div className='flex'>
-                  <img
-                    className='mx-auto h-5 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/nvidia.svg'
-                    alt='Nvidia Logo'
-                    height='20'
-                    width='auto'
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/adobe.svg'
+                    alt='adobe-logo'
+                    height='48'
+                    width='133'
                   />
                 </div>
 
                 <div className='flex'>
-                  <img
-                    className='mx-auto h-4 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/column.svg'
-                    alt='Column Logo'
-                    height='16'
-                    width='auto'
-                  />
-                </div>
-                <div className='flex'>
-                  <img
-                    className='mx-auto h-4 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/github.svg'
-                    alt='GitHub Logo'
-                    height='16'
-                    width='auto'
-                  />
-                </div>
-                <div className='flex'>
-                  <img
-                    className='mx-auto h-5 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/nike.svg'
-                    alt='Nike Logo'
-                    height='20'
-                    width='auto'
-                  />
-                </div>
-                <div className='flex'>
-                  <img
-                    className='mx-auto h-5 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/lemonsqueezy.svg'
-                    alt='Lemon Squeezy Logo'
-                    height='20'
-                    width='auto'
-                  />
-                </div>
-                <div className='flex'>
-                  <img
-                    className='mx-auto h-4 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/laravel.svg'
-                    alt='Laravel Logo'
-                    height='16'
-                    width='auto'
-                  />
-                </div>
-                <div className='flex'>
-                  <img
-                    className='mx-auto h-7 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/lilly.svg'
-                    alt='Lilly Logo'
-                    height='28'
-                    width='auto'
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/upwork.svg'
+                    alt='upwork-logo'
+                    height='48'
+                    width='133'
                   />
                 </div>
 
                 <div className='flex'>
-                  <img
-                    className='mx-auto h-6 w-fit dark:invert'
-                    src='https://html.tailus.io/blocks/customers/openai.svg'
-                    alt='OpenAI Logo'
-                    height='24'
-                    width='auto'
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/zoom.svg'
+                    alt='zoom-logo'
+                    height='48'
+                    width='133'
+                  />
+                </div>
+
+                <div className='flex'>
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/postman.svg'
+                    alt='postman-logo'
+                    height='48'
+                    width='133'
+                  />
+                </div>
+                <div className='flex'>
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] fdark:filter dark:grayscale dark:brightness-90'
+                    src='/databricks.svg'
+                    alt='databricks-logo'
+                    height='48'
+                    width='133'
+                  />
+                </div>
+
+                <div className='flex'>
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/airbnb.svg'
+                    alt='airbnb-logo'
+                    height='48'
+                    width='133'
+                  />
+                </div>
+
+                <div className='flex'>
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/dropbox.svg'
+                    alt='dropbox-logo'
+                    height='48'
+                    width='133'
+                  />
+                </div>
+
+                <div className='flex'>
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/paypal.svg'
+                    alt='paypal-logo'
+                    height='48'
+                    width='133'
+                  />
+                </div>
+
+                <div className='flex'>
+                  <Image
+                    className='mx-auto h-[34px] lg:h-12 min-w-[98px] dark:filter dark:grayscale dark:brightness-90'
+                    src='/netflix.svg'
+                    alt='netflix-logo'
+                    height='48'
+                    width='133'
                   />
                 </div>
               </InfiniteSlider>

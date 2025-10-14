@@ -34,7 +34,15 @@ export const Header = () => {
                 className='flex items-center space-x-2'
               >
                 {/* Logo  */}
-                <Image src='/logo.svg' alt='logo' width={26} height={28} />
+                <Image src='/titik.png' alt='logo' width={26} height={28} />
+                <Image
+                  src='/koma.png'
+                  alt='logo'
+                  width={26}
+                  height={28}
+                  className='-ml-2'
+                />
+                {/* <Image src='/logo.svg' alt='logo' width={26} height={28} /> */}
                 <span className='text-xl font-bold'>Umbara</span>
               </Link>
 
