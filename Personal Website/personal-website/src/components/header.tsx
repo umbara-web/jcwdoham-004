@@ -113,9 +113,9 @@ export const Header = () => {
                 </div>
               </ThemeProvider>
               <div className='flex w-full flex-col space-y-3'>
-                <Button className='inset-shadow-sm inset-shadow-white/100 dark:inset-shadow-black/80 px-6 hover:bg-primary/80'>
+                <Button>
                   <a href='#'>
-                    <span className='text-nowrap font-bold'>Contact Me</span>
+                    <span className='text-nowrap'>Contact Me</span>
                   </a>
                 </Button>
               </div>
