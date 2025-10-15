@@ -6,11 +6,11 @@ const HeroSection: React.FC = () => {
   return (
     <>
       <section>
-        <div className='pb-4 pt-12 md:pb-4 lg:pb-56 lg:pt-44'>
-          <div className='relative mx-auto flex max-w-6xl flex-col px-6 lg:block'>
+        <div className='pb-4 pt-12 md:pb-4 lg:pb-44 lg:pt-44'>
+          <div className='relative mx-auto flex max-w-6xl flex-col px-6 lg:block mt-8 lg:mt-28'>
             <div className='mx-auto max-w-2xl text-center lg:z-20 lg:ml-0 lg:w-6xl lg:text-left'>
               <h1 className='mt-8 text-xs font-semibold md:text-base lg:mt-16 xl:text-2xl text-base-500'>
-                Hai I am
+                Hai, I am
               </h1>
               <h1 className='text-sm font-extrabold md:text-lg xl:text-3xl'>
                 DEBI UMBARA
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
               <h1 className='text-primary text-2xl font-extrabold md:text-4xl xl:text-5xl py-6'>
                 Full-Stack Web Developer
               </h1>
-              <p className='max-w-2xl text-pretty text-lg text-base-600'>
+              <p className='max-w-2xl text-pretty text-lg text-base-500'>
                 Building scalable and high-performance web solutions for your
                 business needs.
               </p>
@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
             </div>
             <img
               className='-z-10 order-first mx-auto object-cover lg:absolute lg:inset-0 md:size-2/6 lg:inset-y-0 lg:-right-170 lg:-top-42 lg:order-last lg:h-[600px] lg:object-contain dark:mix-blend-lighten dark:invert-0'
-              src='/src/assets/foto.png'
+              src='/src/assets/foto-hero.png'
               alt='Foto'
               height='100'
               width='150'
