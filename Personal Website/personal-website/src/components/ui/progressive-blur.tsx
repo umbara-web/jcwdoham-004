@@ -1,13 +1,6 @@
-'use client';
-import { cn } from '@/lib/utils';
-import { HTMLMotionProps, motion } from 'motion/react';
-
-export const GRADIENT_ANGLES = {
-  top: 0,
-  right: 90,
-  bottom: 180,
-  left: 270,
-};
+import { cn, GRADIENT_ANGLES } from '@/lib/utils';
+import { motion } from 'motion/react';
+import type { HTMLMotionProps } from 'motion/react';
 
 export type ProgressiveBlurProps = {
   direction?: keyof typeof GRADIENT_ANGLES;
