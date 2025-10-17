@@ -31,7 +31,7 @@ export const Header = () => {
     <header>
       <nav
         data-state={menuState && 'active'}
-        className='bg-background/50 fixed z-20 w-full border-b border-gray-500 backdrop-blur-3xl'
+        className='bg-transparent fixed z-20 w-full border-b border-gray-500 backdrop-blur-3xl'
       >
         <div className='mx-auto max-w-6xl px-6 transition-all duration-300'>
           <div className='relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4'>
@@ -56,7 +56,7 @@ export const Header = () => {
                   className='-ml-2'
                 />
 
-                <span className='text-xl font-bold'>Umbara</span>
+                <div className='text-xl font-bold'>Umbara</div>
               </a>
 
               <button
@@ -69,7 +69,7 @@ export const Header = () => {
               </button>
 
               <div className='hidden lg:block '>
-                <ul className='flex justify-between items-center font-bold mx-40'>
+                <ul className='flexjustify-between items-center font-bold mx-40'>
                   <NavigationMenu />
                 </ul>
               </div>
@@ -88,7 +88,7 @@ export const Header = () => {
               <div className='flex w-full flex-col space-y-3'>
                 <Button>
                   <a href='#'>
-                    <span className='text-nowrap'>Contact Me</span>
+                    <span className='text-nowrap'>Hire Me</span>
                   </a>
                 </Button>
               </div>

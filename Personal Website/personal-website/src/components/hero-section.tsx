@@ -1,32 +1,36 @@
 import React from 'react';
 import Button from '@/components/ui/Button';
+import AnimationTitle from './ui/AnimationTitle';
 // import { Header } from './header';
 
 const HeroSection: React.FC = () => {
   return (
     <>
       <section>
-        <div className='pb-4 pt-12 md:pb-4 lg:pb-44 lg:pt-44'>
+        <div className='pb-4 pt-12 md:pb-4 lg:pb-44 lg:pt-44 mx-auto max-w-6xl'>
           <div className='relative mx-auto flex max-w-6xl flex-col px-6 lg:block mt-8 lg:mt-28'>
             <div className='mx-auto max-w-2xl text-center lg:z-20 lg:ml-0 lg:w-6xl lg:text-left'>
               <h1 className='mt-8 text-xs font-semibold md:text-base lg:mt-16 xl:text-2xl text-base-500'>
-                Hai, I am
+                Hi, I am
               </h1>
               <h1 className='text-sm font-extrabold md:text-lg xl:text-3xl'>
                 DEBI UMBARA
               </h1>
-              <h1 className='text-primary text-2xl font-extrabold md:text-4xl xl:text-5xl py-6'>
-                Full-Stack Web Developer
-              </h1>
+              <AnimationTitle />
               <p className='max-w-2xl text-pretty text-lg text-base-500'>
                 Building scalable and high-performance web solutions for your
                 business needs.
               </p>
 
-              <div className='mt-8 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start'>
-                <Button variant='primary' className='px-24 text-lg'>
+              <div className='mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start'>
+                <Button variant='primary' className='px-6 text-lg'>
                   <a href='#link'>
-                    <span className='text-nowrap'>Let&apos;s Talk</span>
+                    <span className='text-nowrap'>View Portfolio</span>
+                  </a>
+                </Button>
+                <Button variant='primary' className='px-6 text-lg'>
+                  <a href='#link'>
+                    <span className='text-nowrap'>Contact Me</span>
                   </a>
                 </Button>
               </div>

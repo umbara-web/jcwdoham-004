@@ -7,8 +7,17 @@
 
 @theme {
   --font-quicksand: 'Quicksand', sans-serif;
-  /* --color-primary: #421abc; */
-  --color-primary: #0a10f0;
+  --color-primary-50: #ede9fc;
+  --color-primary-100: #cec0f6;
+  --color-primary-200: #ae98f1;
+  --color-primary-300: #8e6feb;
+  --color-primary-400: #6f47e6;
+  --color-primary-500: #4f1fe0;
+  --color-primary-600: #421abc;
+  --color-primary-700: #331490;
+  --color-primary-800: #240e67;
+  --color-primary-900: #16093f;
+  --color-primary-950: #080316;
 
   --color-light: #0a0d12;
   --color-dark: #fdfdfd;

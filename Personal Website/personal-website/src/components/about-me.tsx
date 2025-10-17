@@ -1,12 +1,16 @@
+import React from 'react';
 import Button from '@/components/ui/Button';
 import { Download } from 'lucide-react';
-export default function AboutMe() {
+// export default function AboutMe() {
+const AboutMe: React.FC = () => {
   return (
     <>
       <section className='py-2 md:py-2'>
         <div className='mx-auto max-w-6xl px-6 mt-28'>
           <div className='space-y-2 text-center'>
-            <h1 className='text-3xl font-bold lg:text-display-xl'>About Me</h1>
+            <h1 className='text-3xl font-bold lg:text-display-xl'>
+              <span className='text-primary-500'>About</span> Me
+            </h1>
             <h6 className='mb-14 text-base-500'>
               User Interface and User Experience
             </h6>
@@ -32,11 +36,13 @@ export default function AboutMe() {
             </div>
 
             <div className='text-justify mt-16'>
-              <h1 className='text-2xl font-bold text-primary'>Hello!</h1>
+              <h1 className='text-2xl font-bold text-primary-300'>Hello!</h1>
               <p className='text-base-500 text-md'>
                 My name is{' '}
-                <span className='font-bold text-base-300'>Debi Umbara</span>,
-                and I specialize in web development using HTML, CSS, JS,
+                <span className='font-bold text-black dark:text-white'>
+                  Debi Umbara
+                </span>
+                , and I specialize in web development using HTML, CSS, JS,
                 TailwindCSS, React, and Next etc. I am a highly motivated and
                 optimistic individual, dedicated to writing clear, concise, and
                 robust code that is effective. I always strive to continuously
@@ -62,4 +68,6 @@ export default function AboutMe() {
       </section>
     </>
   );
-}
+};
+
+export default AboutMe;

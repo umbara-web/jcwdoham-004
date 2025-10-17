@@ -4,6 +4,7 @@ import FooterSection from './components/footer';
 import { Header } from './components/header';
 import HeroSection from './components/hero-section';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Skills from './components/skills';
 // import Skill from './components/skill';
 
 function App() {
@@ -11,15 +12,13 @@ function App() {
     <div className='font-quicksand'>
       <BrowserRouter>
         <Header />
-        {/* <HeroSection /> */}
         <Routes>
           <Route path='/' element={<HeroSection />} />
           <Route path='/about-me' element={<AboutMe />} />
+          <Route path='/skills' element={<Skills />} />
         </Routes>
         <FooterSection />
       </BrowserRouter>
-      {/* <AboutMe /> */}
-      {/* <Skill /> */}
     </div>
   );
 }

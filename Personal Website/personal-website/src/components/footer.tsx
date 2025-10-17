@@ -1,7 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router';
 import NavigationMenu from './ui/NavigationMenu';
 
-export default function FooterSection() {
+const FooterSection: React.FC = () => {
   return (
     <footer className='p-4 md:p-6'>
       <div className='font-bold mx-auto max-w-6xl p-5 lg:p-10 bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 rounded-3xl'>
@@ -24,7 +25,7 @@ export default function FooterSection() {
             height={28}
             className='-ml-2'
           />
-          <span className='text-xl font-bold'>Umbara</span>
+          <span className='text-2xl font-bold'>Umbara</span>
         </Link>
         <nav
           className='my-8 flex flex-wrap justify-center gap-6 text-sm'
@@ -169,4 +170,6 @@ export default function FooterSection() {
       </div>
     </footer>
   );
-}
+};
+
+export default FooterSection;

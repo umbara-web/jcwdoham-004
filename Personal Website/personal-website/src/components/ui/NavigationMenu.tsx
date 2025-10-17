@@ -1,10 +1,11 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function NavigationMenu() {
+const NavigationMenu: React.FC = () => {
   return (
     <div>
       <nav
-        className='flex flex-row justify-center lg:items-center gap-6 text-sm'
+        className='flex flex-row lg:items-center gap-2 md:gap-6 text-sm'
         aria-label='Footer navigation'
       >
         <NavLink
@@ -53,4 +54,6 @@ export default function NavigationMenu() {
       </nav>
     </div>
   );
-}
+};
+
+export default NavigationMenu;
