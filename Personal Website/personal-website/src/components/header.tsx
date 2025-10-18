@@ -40,7 +40,7 @@ export const Header = () => {
               <a
                 href='/'
                 aria-label='home'
-                className='flex items-center space-x-2'
+                className='flex items-center space-x-2 border-r-2 border-gray-500 pr-10'
               >
                 <img
                   src='../src/assets/titik.png'
@@ -68,8 +68,8 @@ export const Header = () => {
                 <X className='in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200' />
               </button>
 
-              <div className='hidden lg:block '>
-                <ul className='flexjustify-between items-center font-bold mx-40'>
+              <div className='hidden lg:block'>
+                <ul className='flexjustify-between items-center font-bold'>
                   <NavigationMenu />
                 </ul>
               </div>

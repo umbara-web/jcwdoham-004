@@ -5,7 +5,7 @@ import { Header } from './components/header';
 import HeroSection from './components/hero-section';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Skills from './components/skills';
-// import Skill from './components/skill';
+import Exprience from './components/experience';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path='/' element={<HeroSection />} />
           <Route path='/about-me' element={<AboutMe />} />
           <Route path='/skills' element={<Skills />} />
+          <Route path='/experience' element={<Exprience />} />
         </Routes>
         <FooterSection />
       </BrowserRouter>

@@ -42,6 +42,17 @@ const NavigationMenu: React.FC = () => {
         </NavLink>
 
         <NavLink
+          to='/experience'
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black dark:text-white font-bold border border-base-500 rounded-full px-4 py-0.5'
+              : 'hover:text-primary hover:underline block duration-150'
+          }
+        >
+          Experience
+        </NavLink>
+
+        <NavLink
           to='/testimonials'
           className={({ isActive }) =>
             isActive
