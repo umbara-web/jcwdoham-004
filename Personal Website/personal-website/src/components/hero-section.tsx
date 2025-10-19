@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@/components/ui/Button';
 import AnimationTitle from './ui/AnimationTitle';
+import { NavLink } from 'react-router';
 // import { Header } from './header';
 
 const HeroSection: React.FC = () => {
@@ -23,15 +24,15 @@ const HeroSection: React.FC = () => {
               </p>
 
               <div className='mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start'>
-                <Button variant='primary' className='px-6 text-lg'>
-                  <a href='#link'>
+                <Button variant='primary' className='w-full px-6 text-lg'>
+                  <NavLink to='/portfolio'>
                     <span className='text-nowrap'>View Portfolio</span>
-                  </a>
+                  </NavLink>
                 </Button>
-                <Button variant='primary' className='px-6 text-lg'>
-                  <a href='#link'>
+                <Button variant='primary' className='w-full px-6 text-lg'>
+                  <NavLink to='/contact'>
                     <span className='text-nowrap'>Contact Me</span>
-                  </a>
+                  </NavLink>
                 </Button>
               </div>
             </div>
@@ -42,13 +43,6 @@ const HeroSection: React.FC = () => {
               height='100'
               width='150'
             />
-            {/* <img
-                className='-z-10 order-first ml-auto h-56 w-full object-cover grayscale sm:h-96 lg:absolute lg:inset-0 lg:-right-20 lg:-top-20 lg:order-last lg:h-max lg:w-2/3 lg:object-contain dark:mix-blend-lighten dark:invert-0'
-                src='/src/assets/foto-gw.png'
-                alt='Abstract Object'
-                height='4000'
-                width='3000'
-              /> */}
           </div>
         </div>
       </section>

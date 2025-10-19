@@ -3,8 +3,11 @@ import { experiences } from '@/data/data';
 
 const experience: React.FC = () => {
   return (
-    <section id='experience' className='py-20 px-6'>
-      <div className='container mx-auto relative max-w-6xl px-6 mt-28'>
+    <section
+      id='experience'
+      className='container mx-auto max-w-6xl p-6 md:p-8 lg:px-4 lg:py-10'
+    >
+      <div className='container mx-auto relative max-w-6xl mt-20'>
         <div className='text-center space-y-2'>
           <h1 className='font-bold text-3xl lg:text-display-xl'>
             My <span className='text-primary-600'>Experience</span>
@@ -13,7 +16,7 @@ const experience: React.FC = () => {
             The Tools and technologies I use to bring idea to life
           </h2>
 
-          <div className='relative w-full max-w-5xl mx-auto px-4 py-12'>
+          <div className='relative w-full mx-auto py-12'>
             <div className='absolute left-1/2 md:left-1/2 top-0 bottom-0 w-1 md:flex hidden bg-primary-600 transform -translate-x-1/2'></div>
             <div className='space-y-16'>
               {experiences.map((exp, index) => {
@@ -40,11 +43,13 @@ const experience: React.FC = () => {
                           isLeft ? 'md:text-right md:mr-12' : 'md:ml-12'
                         } text-left`}
                     >
-                      <h3 className='text-xl font-semibold text-gray-100'>
+                      <h3 className='text-xl font-semibold text-black dark:text-white'>
                         {exp.company}
                       </h3>
-                      <p className='text-sm text-gray-500 mb-3'>{exp.period}</p>
-                      <p className='text-sm text-gray-400 text-justify mb-4'>
+                      <p className='text-sm text-base-950 dark:text-base-500 mb-3'>
+                        {exp.period}
+                      </p>
+                      <p className='text-sm text-base-950 dark:text-base-400 text-justify mb-4'>
                         {exp.description}
                       </p>
 

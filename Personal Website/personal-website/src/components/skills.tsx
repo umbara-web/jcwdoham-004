@@ -14,8 +14,11 @@ interface SkillCategory {
 
 const SkillsSection: React.FC = () => {
   return (
-    <section id='skills' className='py-2 md:py-2'>
-      <div className='container mx-auto relative max-w-6xl px-6 mt-28'>
+    <section
+      id='skills'
+      className='container mx-auto max-w-6xl p-6 md:p-8 lg:px-4 lg:py-10'
+    >
+      <div className='container mx-auto relative max-w-6xl mt-28'>
         <div className='text-center space-y-2'>
           <h1 className='font-bold text-3xl lg:text-display-xl'>
             My <span className='text-primary-600'>Skills</span>

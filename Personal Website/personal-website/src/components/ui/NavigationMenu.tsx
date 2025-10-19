@@ -5,7 +5,7 @@ const NavigationMenu: React.FC = () => {
   return (
     <div>
       <nav
-        className='flex flex-row lg:items-center gap-2 md:gap-6 text-sm'
+        className='flex flex-wrap items-center justify-center gap-2 md:gap-6 text-sm'
         aria-label='Footer navigation'
       >
         <NavLink
@@ -42,6 +42,17 @@ const NavigationMenu: React.FC = () => {
         </NavLink>
 
         <NavLink
+          to='/portfolio'
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black dark:text-white font-bold border border-base-500 rounded-full px-4 py-0.5'
+              : 'hover:text-primary hover:underline block duration-150'
+          }
+        >
+          Portfolio
+        </NavLink>
+
+        <NavLink
           to='/experience'
           className={({ isActive }) =>
             isActive
@@ -61,6 +72,17 @@ const NavigationMenu: React.FC = () => {
           }
         >
           Testimonials
+        </NavLink>
+
+        <NavLink
+          to='/contact'
+          className={({ isActive }) =>
+            isActive
+              ? 'text-black dark:text-white font-bold border border-base-500 rounded-full px-4 py-0.5'
+              : 'hover:text-primary hover:underline block duration-150'
+          }
+        >
+          Contact
         </NavLink>
       </nav>
     </div>

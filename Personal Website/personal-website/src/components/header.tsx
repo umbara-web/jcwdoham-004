@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import DarkModeBtn from '@/components/ui/DarkModeBtn';
 import { ThemeProvider } from '../contexts/theme';
 import NavigationMenu from './ui/NavigationMenu';
+import { NavLink } from 'react-router';
+import NavigationMenuMobile from './ui/NavigationMenuMobile';
 
 export const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
@@ -33,14 +35,14 @@ export const Header = () => {
         data-state={menuState && 'active'}
         className='bg-transparent fixed z-20 w-full border-b border-gray-500 backdrop-blur-3xl'
       >
-        <div className='mx-auto max-w-6xl px-6 transition-all duration-300'>
+        <div className='mx-auto max-w-6xl px-4 transition-all duration-300'>
           <div className='relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4'>
             {/* Logo */}
             <div className='flex w-full items-center justify-between gap-12 lg:w-auto'>
               <a
                 href='/'
                 aria-label='home'
-                className='flex items-center space-x-2 border-r-2 border-gray-500 pr-10'
+                className='flex items-center space-x-2 '
               >
                 <img
                   src='../src/assets/titik.png'
@@ -58,7 +60,7 @@ export const Header = () => {
 
                 <div className='text-xl font-bold'>Umbara</div>
               </a>
-
+              {/* Humberger Menu Mobile */}
               <button
                 onClick={() => setMenuState(!menuState)}
                 aria-label={menuState == true ? 'Close Menu' : 'Open Menu'}
@@ -68,17 +70,20 @@ export const Header = () => {
                 <X className='in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200' />
               </button>
 
+              {/* Navigation Menu Dekstop */}
               <div className='hidden lg:block'>
-                <ul className='flexjustify-between items-center font-bold'>
+                <nav className='flex flex-wrap justify-between items-center font-bold'>
                   <NavigationMenu />
-                </ul>
+                </nav>
               </div>
             </div>
-            <div className='bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-gray-500 p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent'>
+
+            {/* Navigation Menu Mobile */}
+            <div className='bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-gray-200 p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent'>
               <div className='lg:hidden'>
-                <ul className='flex flex-col space-y-6 text-base font-bold'>
-                  <NavigationMenu />
-                </ul>
+                <nav className='space-y-6 text-base font-bold'>
+                  <NavigationMenuMobile />
+                </nav>
               </div>
               <ThemeProvider value={{ darkMode, toggleDarkMode }}>
                 <div className='flex w-full justify-end'>
@@ -87,9 +92,9 @@ export const Header = () => {
               </ThemeProvider>
               <div className='flex w-full flex-col space-y-3'>
                 <Button>
-                  <a href='#'>
-                    <span className='text-nowrap'>Hire Me</span>
-                  </a>
+                  <NavLink to='/contact'>
+                    <span className='text-nowrap'>Contact Me</span>
+                  </NavLink>
                 </Button>
               </div>
             </div>

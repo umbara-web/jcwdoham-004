@@ -57,7 +57,7 @@ interface Testimonial {
   image: string;
 }
 
-interface PortfolioItem {
+export interface PortfolioItem {
   title: string;
   category: string;
   image: string;
@@ -73,6 +73,7 @@ interface Experience {
   skills: string[];
 }
 
+// Skills Data
 const skillsData: SkillCategory[] = [
   {
     title: 'Frontend',
@@ -177,30 +178,59 @@ const testimonials: Testimonial[] = [
     image:
       'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
+  {
+    name: 'Sarah Tan',
+    position: 'Product Manager, Finovate',
+    content:
+      '"The team delivered exactly what we needed — on time and with outstanding quality. Their attention to detail and communication were top-notch."',
+    image: '../src/assets/sarah-tan.svg',
+  },
+  {
+    name: 'Emily Chen',
+    position: 'Marketing Head at Tech Solutions',
+    content:
+      '"The collaboration was seamless, and the results surpassed our expectations. Their expertise transformed our ideas into a successful product."',
+    image: '../src/assets/emily-chen.svg',
+  },
+  {
+    name: 'John Lee',
+    position: 'Creative Director at Innovate Corp',
+    content:
+      '"Working with this team was a game-changer for our project. They understood our vision and turned it into reality efficiently and effectively."',
+    image: '../src/assets/john-lee.svg',
+  },
 ];
 
 // Portfolio data
 const portfolioItems: PortfolioItem[] = [
   {
+    title: 'Landing Page',
+    category: 'Frontend Development',
+    image: '../src/assets/portfolio1.svg',
+  },
+  {
+    title: 'Todo App',
+    category: 'Frontend Development',
+    image: '../src/assets/portfolio3.svg',
+  },
+  {
+    title: 'Landing Page',
+    category: 'Frontend Development',
+    image: '../src/assets/portfolio2.svg',
+  },
+  {
     title: 'E-commerce Website',
-    category: 'Web Design',
-    image:
-      'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+    category: 'Frontend Development',
+    image: '../src/assets/portfolio5.svg',
   },
   {
-    title: 'Fitness App UI',
-    category: 'UI/UX Design',
-    image:
-      'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
-  },
-  {
-    title: 'Analytics Dashboard',
-    category: 'Web Development',
-    image:
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80',
+    title: 'Movie Website',
+    category: 'Frontend Development',
+    image: '../src/assets/portfolio4.svg',
   },
 ];
 
+// Experience data
 const experiences: Experience[] = [
   {
     id: 1,
