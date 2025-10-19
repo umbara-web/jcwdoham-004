@@ -2,36 +2,32 @@
 
 'use client';
 import { useState, useEffect } from 'react';
-import { AiOutlineMoon, AiOutlineSun } from 'react-icons/ai';
-import { LuMonitor } from 'react-icons/lu';
+import { LuMonitor, LuMoonStar, LuSun } from 'react-icons/lu';
 import { useTheme } from 'next-themes';
 // import { Monitor, Sun, Moon } from 'lucide-react';
 
 const DarkModeToggle = () => {
-  // const { mode, setMode } = useState(false);
-  const [mode, setMode] = useState<'system' | 'light' | 'dark'>('system');
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme, resolvedTheme } = useTheme();
-  // const { theme: mode } = useTheme();
-  // const [mode, setMode] = useState<'light' | 'dark'>('dark');
 
   useEffect(() => {
-    setMode(resolvedTheme as 'system' | 'light' | 'dark');
-  }, [resolvedTheme]);
+    setMounted(true);
+  }, []);
 
   const buttons = [
     { id: 'system', icon: <LuMonitor size={15} />, label: 'System' },
-    { id: 'light', icon: <AiOutlineSun size={15} />, label: 'Light' },
-    { id: 'dark', icon: <AiOutlineMoon size={15} />, label: 'Dark' },
+    { id: 'light', icon: <LuSun size={15} />, label: 'Light' },
+    { id: 'dark', icon: <LuMoonStar size={15} />, label: 'Dark' },
   ];
 
-  if (!mode) {
+  if (!mounted) {
     return null;
   }
 
   // const { resolvedTheme } = useTheme();
 
   return (
-    <div className='flex items-center justify-center border border-gray-border dark:border-input gap-1 p-1 rounded-full'>
+    <div className='flex items-center justify-center border border-input gap-1 p-1 rounded-full'>
       {buttons.map((btn) => (
         <button
           key={btn.id}
