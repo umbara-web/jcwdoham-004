@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@/components/ui/Button';
 import { Download } from 'lucide-react';
+import cv from '../../public/CV_Debi Umbara.pdf';
 // export default function AboutMe() {
 const AboutMe: React.FC = () => {
   return (
@@ -54,7 +55,7 @@ const AboutMe: React.FC = () => {
               <p></p>
               <div className='flex justify-center mt-6'>
                 <Button variant='primary' className='rounded-xl text-md px-6'>
-                  <a href='#link'>
+                  <a href={cv} download='cv'>
                     <span className='text-nowrap flex items-center justify-center gap-4'>
                       <Download className='w-5 h-5' /> Download CV
                     </span>

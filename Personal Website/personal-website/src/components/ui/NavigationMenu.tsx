@@ -74,7 +74,7 @@ const NavigationMenu: React.FC = () => {
           Testimonials
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to='/contact'
           className={({ isActive }) =>
             isActive
@@ -83,7 +83,7 @@ const NavigationMenu: React.FC = () => {
           }
         >
           Contact
-        </NavLink>
+        </NavLink> */}
       </nav>
     </div>
   );

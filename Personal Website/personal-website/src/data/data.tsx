@@ -179,18 +179,18 @@ const testimonials: Testimonial[] = [
       'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
   {
-    name: 'Sarah Tan',
-    position: 'Product Manager, Finovate',
-    content:
-      '"The team delivered exactly what we needed — on time and with outstanding quality. Their attention to detail and communication were top-notch."',
-    image: '../src/assets/sarah-tan.svg',
-  },
-  {
     name: 'Emily Chen',
     position: 'Marketing Head at Tech Solutions',
     content:
       '"The collaboration was seamless, and the results surpassed our expectations. Their expertise transformed our ideas into a successful product."',
     image: '../src/assets/emily-chen.svg',
+  },
+  {
+    name: 'Sarah Tan',
+    position: 'Product Manager, Finovate',
+    content:
+      '"The team delivered exactly what we needed — on time and with outstanding quality. Their attention to detail and communication were top-notch."',
+    image: '../src/assets/sarah-tan.svg',
   },
   {
     name: 'John Lee',

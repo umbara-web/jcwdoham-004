@@ -85,6 +85,8 @@ export const Header = () => {
                   <NavigationMenuMobile />
                 </nav>
               </div>
+
+              {/* Dark Mode */}
               <ThemeProvider value={{ darkMode, toggleDarkMode }}>
                 <div className='flex w-full justify-end'>
                   <DarkModeBtn />

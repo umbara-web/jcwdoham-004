@@ -1,4 +1,4 @@
-import { Sun, Moon } from 'lucide-react';
+import { LuMoonStar, LuSun } from 'react-icons/lu';
 import useTheme from '@/contexts/theme';
 
 const DarkModeBtn = () => {
@@ -15,20 +15,20 @@ const DarkModeBtn = () => {
         }`}
       >
         <div
-          className={`absolute top-1/2 -translate-y-1/2 bg-base-500 p-0.5 rounded-full flex items-center justify-center transition-all duration-500 ${
+          className={`absolute top-1/2 -translate-y-1/2 bg-primary-600 p-0.5 rounded-full flex items-center justify-center transition-all duration-500 ${
             darkMode ? 'translate-x-5.5' : 'translate-x-0'
           }`}
         >
           {darkMode ? (
-            <Moon size={18} className='text-white' />
+            <LuMoonStar size={18} className='text-white' />
           ) : (
-            <Sun size={18} className='text-white' />
+            <LuSun size={18} className='text-white' />
           )}
         </div>
 
         <div className='flex w-full justify-between items-center gap-3 text-white '>
-          <Sun size={16} />
-          <Moon size={16} className='text-black dark:text-white' />
+          <LuSun size={16} />
+          <LuMoonStar size={16} className='text-black dark:text-white' />
         </div>
       </button>
     </div>
