@@ -1,20 +1,15 @@
 'use client';
 import Link from 'next/link';
-// import { Logo } from '@/components/logo';
+import DarkModeToggle from '@/components/ui/DarkModeToggle';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import React from 'react';
 import Image from 'next/image';
 
 const menuItems = [
-  // { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/' },
-  { name: 'Service', href: '#service' },
-  { name: 'Project', href: '#project' },
-  { name: 'Team', href: '#team' },
-  { name: 'Testimonial', href: '#testimonial' },
-  { name: 'Blog List', href: '#blog' },
-  { name: 'FAQ', href: '#faq' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Service', href: '/services' },
+  { name: 'Blog', href: '/blog' },
 ];
 
 export const Header = () => {
@@ -34,15 +29,7 @@ export const Header = () => {
                 className='flex items-center space-x-2'
               >
                 {/* Logo  */}
-                <Image src='/titik.png' alt='logo' width={26} height={28} />
-                <Image
-                  src='/koma.png'
-                  alt='logo'
-                  width={26}
-                  height={28}
-                  className='-ml-2'
-                />
-                {/* <Image src='/logo.svg' alt='logo' width={26} height={28} /> */}
+                <Image src='/logo.svg' alt='logo' width={26} height={28} />
                 <span className='text-xl font-bold'>Umbara</span>
               </Link>
 
@@ -55,7 +42,7 @@ export const Header = () => {
                 <X className='in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200' />
               </button>
 
-              <div className='hidden lg:block mx-23'>
+              <div className='hidden lg:block mx-65'>
                 <ul className='flex gap-8 text-sm font-bold'>
                   {menuItems.map((item, index) => (
                     <li key={index}>
@@ -87,16 +74,7 @@ export const Header = () => {
                 </ul>
               </div>
               <div className='flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit'>
-                <Button
-                  asChild
-                  variant='outline'
-                  size='sm'
-                  className='inset-shadow-sm inset-shadow-gray-500/50'
-                >
-                  <Link href='#'>
-                    <span className='font-bold'>Login</span>
-                  </Link>
-                </Button>
+                <DarkModeToggle />
                 <Button
                   asChild
                   size='sm'

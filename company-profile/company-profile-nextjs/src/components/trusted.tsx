@@ -12,7 +12,7 @@ export default function Trusted() {
             <p>Trusted by Global Innovators & Leading Brands</p>
           </div>
           <div className='flex flex-col items-center md:flex-row'>
-            <div className='relative py-16 md:w-full'>
+            <div className='relative py-16 md:max-w-6xl overflow-hidden'>
               <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
                 <div className='flex'>
                   <Image

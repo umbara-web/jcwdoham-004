@@ -126,9 +126,20 @@
 @theme {
   --font-quicksand: 'Quicksand', sans-serif;
   --color-primary: #ff623e;
-  --color-primary-100: #ffe0d8;
-  --color-primary-300: #cc4e32;
-  --color-primary-400: #80311f;
+  --color-primary-50: #ffeae6;
+  --color-primary-100: #ffc5b8;
+  --color-primary-200: #ff9f8a;
+  --color-primary-300: #ff7a5c;
+  --color-primary-400: #ff623e;
+  --color-primary-500: #ff2f00;
+  --color-primary-600: #d12600;
+  --color-primary-700: #a31e00;
+  --color-primary-800: #751600;
+  --color-primary-900: #470d00;
+  --color-primary-950: #1a0500;
+  --color-primary2-100: #ffe0d8;
+  --color-primary2-300: #cc4e32;
+  --color-primary2-400: #80311f;
 
   --color-light: #0a0d12;
   --color-dark: #fdfdfd;
